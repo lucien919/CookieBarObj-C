@@ -16,6 +16,9 @@
 		042F900F1FCC7077003966F3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 042F900E1FCC7077003966F3 /* main.m */; };
 		042F90191FCC7078003966F3 /* CookieBarObj_CTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 042F90181FCC7078003966F3 /* CookieBarObj_CTests.m */; };
 		042F90241FCC7078003966F3 /* CookieBarObj_CUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 042F90231FCC7078003966F3 /* CookieBarObj_CUITests.m */; };
+		042F90391FCC7B11003966F3 /* CookieCellCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 042F90371FCC7B11003966F3 /* CookieCellCollectionViewCell.m */; };
+		042F90A71FCCE971003966F3 /* Cookie.m in Sources */ = {isa = PBXBuildFile; fileRef = 042F90A61FCCE971003966F3 /* Cookie.m */; };
+		042F90AA1FCD424A003966F3 /* CookieManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 042F90A91FCD424A003966F3 /* CookieManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,12 @@
 		042F901F1FCC7078003966F3 /* CookieBarObj-CUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CookieBarObj-CUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		042F90231FCC7078003966F3 /* CookieBarObj_CUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CookieBarObj_CUITests.m; sourceTree = "<group>"; };
 		042F90251FCC7078003966F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		042F90361FCC7B11003966F3 /* CookieCellCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CookieCellCollectionViewCell.h; sourceTree = "<group>"; };
+		042F90371FCC7B11003966F3 /* CookieCellCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CookieCellCollectionViewCell.m; sourceTree = "<group>"; };
+		042F90A51FCCE971003966F3 /* Cookie.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Cookie.h; sourceTree = "<group>"; };
+		042F90A61FCCE971003966F3 /* Cookie.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Cookie.m; sourceTree = "<group>"; };
+		042F90A81FCD424A003966F3 /* CookieManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CookieManager.h; sourceTree = "<group>"; };
+		042F90A91FCD424A003966F3 /* CookieManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CookieManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,13 +112,13 @@
 		042F8FFB1FCC7077003966F3 /* CookieBarObj-C */ = {
 			isa = PBXGroup;
 			children = (
+				042F90351FCC790B003966F3 /* ViewController */,
+				042F90341FCC78CF003966F3 /* ViewModel */,
+				042F90321FCC78BF003966F3 /* View */,
+				042F90311FCC789F003966F3 /* Model */,
 				042F8FFC1FCC7077003966F3 /* AppDelegate.h */,
 				042F8FFD1FCC7077003966F3 /* AppDelegate.m */,
-				042F8FFF1FCC7077003966F3 /* ViewController.h */,
-				042F90001FCC7077003966F3 /* ViewController.m */,
-				042F90021FCC7077003966F3 /* Main.storyboard */,
 				042F90081FCC7077003966F3 /* Assets.xcassets */,
-				042F900A1FCC7077003966F3 /* LaunchScreen.storyboard */,
 				042F900D1FCC7077003966F3 /* Info.plist */,
 				042F900E1FCC7077003966F3 /* main.m */,
 				042F90051FCC7077003966F3 /* CookieBarObj_C.xcdatamodeld */,
@@ -133,6 +142,44 @@
 				042F90251FCC7078003966F3 /* Info.plist */,
 			);
 			path = "CookieBarObj-CUITests";
+			sourceTree = "<group>";
+		};
+		042F90311FCC789F003966F3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				042F90A51FCCE971003966F3 /* Cookie.h */,
+				042F90A61FCCE971003966F3 /* Cookie.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		042F90321FCC78BF003966F3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				042F90021FCC7077003966F3 /* Main.storyboard */,
+				042F900A1FCC7077003966F3 /* LaunchScreen.storyboard */,
+				042F90361FCC7B11003966F3 /* CookieCellCollectionViewCell.h */,
+				042F90371FCC7B11003966F3 /* CookieCellCollectionViewCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		042F90341FCC78CF003966F3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				042F90A81FCD424A003966F3 /* CookieManager.h */,
+				042F90A91FCD424A003966F3 /* CookieManager.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		042F90351FCC790B003966F3 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				042F90001FCC7077003966F3 /* ViewController.m */,
+				042F8FFF1FCC7077003966F3 /* ViewController.h */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,10 +315,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				042F90A71FCCE971003966F3 /* Cookie.m in Sources */,
 				042F90011FCC7077003966F3 /* ViewController.m in Sources */,
 				042F8FFE1FCC7077003966F3 /* AppDelegate.m in Sources */,
 				042F900F1FCC7077003966F3 /* main.m in Sources */,
 				042F90071FCC7077003966F3 /* CookieBarObj_C.xcdatamodeld in Sources */,
+				042F90391FCC7B11003966F3 /* CookieCellCollectionViewCell.m in Sources */,
+				042F90AA1FCD424A003966F3 /* CookieManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
